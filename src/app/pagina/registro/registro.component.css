@@ -1,0 +1,268 @@
+.group-child,
+.group-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-steelblue);
+  width: 100%;
+  height: 45.06rem;
+}
+.group-item {
+  border-radius: 40px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.08);
+  width: 58.94rem;
+  height: 40.81rem;
+}
+.icon {
+  position: absolute;
+  top: 4.72rem;
+  left: 5rem;
+  width: 7.63rem;
+  height: 7.63rem;
+  object-fit: cover;
+}
+.subir-foto1 {
+  margin: 0;
+}
+.subir-foto {
+  position: absolute;
+  top: 13.41rem;
+  left: 4.19rem;
+  text-decoration: underline;
+  color: var(--color-steelblue);
+  text-align: center;
+  display: inline-block;
+  width: 9.25rem;
+  height: 1.31rem;
+}
+.enter-your-username,
+.instance-child {
+  position: absolute;
+  top: -2.17%;
+  left: 0;
+}
+.instance-child {
+  border: 1px solid var(--color-steelblue);
+  background-color: var(--color-white);
+  height: 61.96%;
+  width: 100%;
+  top: 38.04%;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-4xs);
+  box-sizing: border-box;
+}
+.username-or-email {
+  position: absolute;
+  height: 20.65%;
+  width: 66.96%;
+  top: 58.7%;
+  left: 5.54%;
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--color-gray);
+  display: flex;
+  align-items: center;
+}
+.enter-your-username-or-email-a-parent {
+  position: absolute;
+  top: 16.94rem;
+  left: 0;
+  width: 17.38rem;
+  height: 4.31rem;
+}
+.enter-your-username-or-email-a-group {
+  position: absolute;
+  top: 0;
+  left: 22.44rem;
+  width: 28rem;
+  height: 4.31rem;
+}
+.enter-your-username-or-email-a-container {
+  position: absolute;
+  top: 5.22rem;
+  left: 22.44rem;
+  width: 23.88rem;
+  height: 4.31rem;
+}
+.group-div {
+  position: absolute;
+  top: 22.31rem;
+  left: 0;
+  width: 17.38rem;
+  height: 4.31rem;
+}
+.enter-your-username-or-email-a-parent1 {
+  position: absolute;
+  top: 27.69rem;
+  left: 0.19rem;
+  width: 17.38rem;
+  height: 4.31rem;
+}
+.icon-calendar {
+  position: absolute;
+  height: 9.36%;
+  width: 5.75%;
+  top: 20.09%;
+  right: -0.5%;
+  bottom: 70.55%;
+  left: 94.75%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.rectangle-div {
+  position: absolute;
+  height: 61.96%;
+  width: 100%;
+  top: 38.04%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-4xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-steelblue);
+  box-sizing: border-box;
+}
+.enter-your-username-or-email-a-parent2 {
+  position: absolute;
+  top: 10.09rem;
+  left: 22.44rem;
+  width: 28rem;
+  height: 4.31rem;
+}
+.icon-triangle-down {
+  position: absolute;
+  bottom: 19.92rem;
+  left: calc(50% + 363.31px);
+  width: 2.06rem;
+  height: 1.42rem;
+}
+.enter-your-username-or-email-a-parent3 {
+  position: absolute;
+  top: 19.97rem;
+  left: 22.44rem;
+  width: 28rem;
+  height: 4.31rem;
+}
+.enter-your-username-or-email-a-parent4,
+.enter-your-username-or-email-a-parent5 {
+  position: absolute;
+  top: 15.03rem;
+  left: 22.44rem;
+  width: 28rem;
+  height: 4.31rem;
+}
+.enter-your-username-or-email-a-parent5 {
+  top: 25.06rem;
+}
+.icon-triangle-down1,
+.icon-triangle-down2 {
+  position: absolute;
+  bottom: 10.05rem;
+  left: calc(50% + 363.31px);
+  width: 2.06rem;
+  height: 1.42rem;
+}
+.icon-triangle-down2 {
+  bottom: 15.11rem;
+}
+.enter-your-username-or-email-a-parent6 {
+  position: absolute;
+  top: 29.75rem;
+  left: 22.38rem;
+  width: 28rem;
+  height: 4.31rem;
+}
+.icon-plus-circled,
+.icon-plus-circled1 {
+  position: absolute;
+  height: 6.06%;
+  width: 4.09%;
+  top: 93.76%;
+  right: 1.04%;
+  bottom: 0.18%;
+  left: 94.87%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icon-plus-circled1 {
+  top: 79.82%;
+  bottom: 14.13%;
+}
+.parent {
+  position: absolute;
+  top: 0.94rem;
+  left: 5.5rem;
+  width: 50.46rem;
+  height: 34.06rem;
+}
+.group-inner {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-steelblue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 19px rgba(119, 147, 65, 0.3);
+  width: 33.5rem;
+  height: 3.05rem;
+}
+.registrarse {
+  position: absolute;
+  top: 0.63rem;
+  left: 12.56rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 8.31rem;
+  height: 1.69rem;
+}
+.rectangle-container {
+  position: absolute;
+  top: 36.81rem;
+  left: 12.75rem;
+  width: 33.5rem;
+  height: 3.05rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--color-white);
+}
+.rectangle-group {
+  position: absolute;
+  top: 1.56rem;
+  left: 18.31rem;
+  width: 58.94rem;
+  height: 40.81rem;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45.06rem;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.whatsapp-image-2022-07-04-at-1 {
+  position: absolute;
+  top: 0.56rem;
+  left: 0.81rem;
+  width: 7.5rem;
+  height: 6.44rem;
+  object-fit: cover;
+  mix-blend-mode: darken;
+}
+.register-usuario {
+  position: relative;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 45.06rem;
+  overflow: hidden;
+}

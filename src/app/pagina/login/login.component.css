@@ -1,0 +1,224 @@
+.group-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--color-steelblue);
+  width: 37.56rem;
+  height: 45.06rem;
+}
+.group-item {
+  position: absolute;
+  top: 5.63rem;
+  left: 5.5rem;
+  border-radius: 40px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.08);
+  width: 26.5rem;
+  height: 32.25rem;
+}
+.nombre {
+  font-weight: 600;
+  color: var(--color-steelblue);
+}
+.bienvenido-a-nombre-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 11.06rem;
+  height: 1.88rem;
+}
+.bienvenido-a-nombre-parent,
+.login1 {
+  position: absolute;
+  top: 8.13rem;
+  left: 7.69rem;
+  width: 11.06rem;
+  height: 1.88rem;
+}
+.login1 {
+  top: 9.99rem;
+  left: 7.66rem;
+  font-size: var(--font-size-15xl);
+  font-weight: 500;
+  display: inline-block;
+  width: 9.15rem;
+  height: 4.68rem;
+}
+.enter-your-username,
+.instance-child {
+  position: absolute;
+  top: -2.17%;
+  left: 0;
+}
+.instance-child, .instance-item {
+  border: 1px solid var(--color-steelblue);
+  background-color: var(--color-white);
+  position: absolute;
+  height: 61.96%;
+  width: 100%;
+  top: 38.04%;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-4xs);
+  box-sizing: border-box;
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  text-indent: 20px;
+}
+.instance-child::placeholder, .instance-item::placeholder {
+  position: absolute;
+  width: 66.96%;
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--color-gray-100);
+}
+.enter-your-username-or-email-a-parent {
+  position: absolute;
+  top: 15.25rem;
+  left: 7.66rem;
+  width: 22.17rem;
+  height: 5.19rem;
+}
+.instance-item {
+  left: 0;
+}
+.enter-your-password-parent {
+  position: absolute;
+  top: 22.59rem;
+  left: 7.66rem;
+  width: 22.17rem;
+  height: 5.19rem;
+}
+.olvido-su-contrasea,
+.registrarse {
+  text-decoration: none;
+  position: absolute;
+  top: 28.38rem;
+  left: 20.56rem;
+  font-size: var(--font-size-smi);
+  color: var(--color-steelblue);
+  display: inline-block;
+  width: 9.25rem;
+  height: 1.31rem;
+}
+.registrarse {
+  left: 7.69rem;
+}
+.group-inner {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-steelblue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 19px rgba(119, 147, 65, 0.3);
+  width: 22.17rem;
+  height: 3.05rem;
+  font: 600 20px var(--font-poppins);
+}
+.login2 {
+  text-decoration: none;
+  position: absolute;
+  top: 0.48rem;
+  left: 9.13rem;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  width: 4.25rem;
+  height: 1.69rem;
+}
+.rectangle-group {
+  position: absolute;
+  top: 31.39rem;
+  left: 7.69rem;
+  width: 22.17rem;
+  height: 3.05rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--color-white);
+}
+.rectangle-parent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37.56rem;
+  height: 45.06rem;
+}
+.lorem-ipsum {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  width: 15.23rem;
+}
+.lorem-ipsum-parent,
+.lorem-ipsum1 {
+  position: absolute;
+  left: 0;
+  width: 26.57rem;
+}
+.lorem-ipsum1 {
+  margin: 0;
+  top: 3.19rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+}
+.lorem-ipsum-parent {
+  top: 0;
+  height: 5.44rem;
+}
+.lorem-ipsum-is {
+  position: absolute;
+  top: 6.81rem;
+  left: 0.13rem;
+  font-size: var(--font-size-smi);
+  font-weight: 300;
+  display: inline-block;
+  width: 36.44rem;
+  height: 7.19rem;
+}
+.group-parent {
+  position: absolute;
+  top: 12.69rem;
+  left: 3.75rem;
+  width: 36.56rem;
+  height: 14rem;
+  font-size: var(--font-size-15xl);
+}
+.whatsapp-image-2022-07-04-at-1 {
+  position: absolute;
+  top: 1.13rem;
+  left: 3.75rem;
+  width: 15.25rem;
+  height: 12.06rem;
+  object-fit: cover;
+  mix-blend-mode: darken;
+}
+.medical-shield-1-icon {
+  position: absolute;
+  top: 26.44rem;
+  left: 3.75rem;
+  width: 14.19rem;
+  height: 14.25rem;
+  object-fit: cover;
+}
+.login {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 45.06rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
