@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="/my-app/src/styles.css" />
-    <link rel="stylesheet" href="./registro.component.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-    />
-  </head>
-  <body>
-    <div class="register-usuario">
-      <section class="rectangle-parent">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height" />
+
+  <link rel="stylesheet" href="/my-app/src/styles.css" />
+  <link rel="stylesheet" href="./registro.component.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" />
+</head>
+
+<body>
+  <div class="register-usuario">
+    <section class="rectangle-parent">
+      <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
         <div class="group-child"></div>
         <div class="rectangle-group">
           <div class="group-item"></div>
           <div class="parent">
-            <img class="icon" alt="" src="./public/6915987-1@2x.png" />
+            <img class="icon" alt="" src="../../../assets/img/icon-register.png" />
 
-              <input class="subir-foto" type="file" name="Subir Foto" accept="image/png, .jpeg, .jpg, image/gif" value="Subir Foto">
+            <input class="subir-foto" type="file" name="Subir Foto" accept="image/png, .jpeg, .jpg, image/gif" ngModel
+              #photo="ngModel" required>
 
             <div class="enter-your-username-or-email-a-parent">
               <div class="enter-your-username">Ingrese su cedula</div>
-              <input class="instance-child" type="text" placeholder="Cedula"/>
+              <input class="instance-child" type="number" name="cedula" placeholder="Cedula" ngModel #cedula="ngModel"
+                required min="1000000" />
+              <div *ngIf="cedula.invalid && (cedula.dirty || cedula.touched || registerForm.submitted)" class="error">
+                <div *ngIf="cedula.errors?.['required']; else notRequired">Cedula es requerida.</div>
+                <ng-template #notRequired>
+                  <div *ngIf="cedula.errors?.['min']">Cedula debe tener al menos 7 dígitos.</div>
+                </ng-template>
+              </div>
             </div>
+
+
             <div class="enter-your-username-or-email-a-group">
               <div class="enter-your-username">Ingrese su nombre completo</div>
-              <input class="instance-child" type="text" placeholder="Nombre Completo"/>
-            </div>
-            <div class="enter-your-username-or-email-a-container">
-              <div class="enter-your-username">
-                Ingrese su fecha de nacimiento
+              <input class="instance-child" type="text" name="nombre" placeholder="Nombre Completo" ngModel
+                #nombre="ngModel" required />
+              <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched || registerForm.submitted)" class="error">
+                <div *ngIf="nombre.errors?.['required']">Nombre completo es requerido.</div>
               </div>
-                <input class="instance-child" type="date" id="start" name="trip-start" value="Fecha de Nacimiento" />
             </div>
+
+
+            <div class="enter-your-username-or-email-a-container">
+              <div class="enter-your-username">Ingrese su fecha de nacimiento</div>
+              <input class="instance-child" type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento" ngModel
+                #fechaNacimiento="ngModel" required />
+              <div *ngIf="fechaNacimiento.invalid && (fechaNacimiento.dirty || fechaNacimiento.touched || registerForm.submitted)" class="error">
+                <div *ngIf="fechaNacimiento.errors?.['required']">Fecha de nacimiento es requerida.</div>
+              </div>
+            </div>
+
             <div class="group-div">
               <div class="enter-your-username">Ingrese su email</div>
-              <input class="instance-child" type="text" placeholder="Email"/>
+              <input class="instance-child" type="email" name="email" placeholder="Email" ngModel #email="ngModel" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+              <div *ngIf="email.invalid && (email.dirty || email.touched || registerForm.submitted)" class="error">
+                <div *ngIf="email.errors?.['required']; else notRequired">Email es requerido.</div>
+                <ng-template #notRequired>
+                  <div *ngIf="email.errors?.['pattern']">Por favor, ingrese un email válido.</div>
+                </ng-template>
+              </div>
             </div>
+
             <div class="enter-your-username-or-email-a-parent1">
               <div class="enter-your-username">Ingrese su contraseña</div>
-              <input class="instance-child" type="text" placeholder="Contraseña"/>
+              <input class="instance-child" type="password" name="contrasena" placeholder="Contraseña" ngModel
+                #contrasena="ngModel" required />
+              <div *ngIf="contrasena.invalid && (contrasena.dirty || contrasena.touched || registerForm.submitted)" class="error">
+                <div *ngIf="contrasena.errors?.['required']">Contraseña es requerida.</div>
+              </div>
             </div>
 
             <div class="enter-your-username-or-email-a-parent2">
@@ -50,15 +80,16 @@
                 Ingrese su ciudad de residencia
               </div>
               <div class="username-or-email">Ciudad de Residencia</div>
-              <select class="rectangle-div" name="Ciudad de Residencia">
+              <select class="rectangle-div" name="Ciudad de Residencia" required>
                 <option value="Armenia">Armenia</option>
+                <option value="Pereira">Pereira</option>
               </select>
             </div>
 
             <div class="enter-your-username-or-email-a-parent3">
               <div class="enter-your-username">Ingrese su tipo sanguineo</div>
               <div class="rectangle-div"></div>
-              <select class="rectangle-div" >
+              <select class="rectangle-div" name="Tipo Sanguineo" required>
                 <option>O-</option>
                 <option>O+</option>
                 <option>A-</option>
@@ -72,8 +103,9 @@
             <div class="enter-your-username-or-email-a-parent4">
               <div class="enter-your-username">Ingrese su EPS</div>
               <div class="rectangle-div"></div>
-              <select class="rectangle-div" >
-                <option value="Armenia">Armenia</option>
+              <select class="rectangle-div">
+                <option value="Nueva EPS">Nueva EPS</option>
+                <option value="Sanitas">Sanitas</option>
               </select>
             </div>
             <div class="enter-your-username-or-email-a-parent5">
@@ -84,20 +116,27 @@
             <div class="enter-your-username-or-email-a-parent6">
               <div class="enter-your-username">Ingrese su telefono</div>
               <div class="rectangle-div"></div>
-              <input class="instance-child" type="text" placeholder="Telefono"/>
+              <input class="instance-child" type="number" name="telefono" placeholder="Teléfono" ngModel
+                #telefono="ngModel" required min="1000000000" max="9999999999" />
+              <div *ngIf="telefono.invalid && (telefono.dirty || telefono.touched || registerForm.submitted)" class="error">
+                <div *ngIf="telefono.errors?.['required']; else notRequired">Número de teléfono es requerido.</div>
+                <ng-template #notRequired>
+                  <div *ngIf="telefono.errors?.['min'] || telefono.errors?.['max']">Número de teléfono debe tener
+                    exactamente 10 dígitos.</div>
+                </ng-template>
+              </div>
             </div>
+
+
           </div>
           <div class="rectangle-container">
-            <button class="group-inner"></button>
-            <div class="registrarse">Registrarse</div>
+            <button class="group-inner" type="submit" [disabled]="!registerForm.valid">Registrarse</button>
           </div>
         </div>
-      </section>
-      <img
-        class="whatsapp-image-2022-07-04-at-1"
-        alt=""
-        src="./public/whatsapp-image-20220704-at-1042-1@2x.png"
-      />
-    </div>
-  </body>
+      </form>
+    </section>
+    <img class="whatsapp-image-2022-07-04-at-1" alt="" src="../../../assets/img/logo-clinic.png" />
+  </div>
+</body>
+
 </html>

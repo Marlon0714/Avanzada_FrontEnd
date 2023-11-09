@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
@@ -10,51 +11,54 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
     />
+    <title>Inicio</title>
   </head>
   <body>
     <div class="login">
-      <div class="rectangle-parent">
-        <div class="group-child"></div>
-        <div class="group-item"></div>
-        <div class="bienvenido-a-nombre-parent">
-          <div class="bienvenido-a-nombre-container">
-            <span>Bienvenido a </span>
-            <span class="nombre">Nombre</span>
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <div class="rectangle-parent">
+          <div class="group-child"></div>
+          <div class="group-item"></div>
+          <div class="bienvenido-a-nombre-parent">
+            <div class="bienvenido-a-nombre-container">
+              <span>Bienvenido a </span>
+              <span class="nombre">Nombre</span>
+            </div>
+          </div>
+          <div class="login1">Login</div>
+          <div class="enter-your-username-or-email-a-parent">
+            <div class="enter-your-username">Ingrese su ID o email</div>
+            <input class="instance-child" type="text" placeholder="ID or email" name="email" ngModel #email="ngModel" required/>
+          </div>
+          <div class="enter-your-password-parent">
+            <div class="enter-your-username">Ingrese su contraseña</div>
+            <input class="instance-item" type="password" placeholder="Contraseña" name="password" ngModel #password="ngModel" required/>
+          </div>
+          <a href="" class="olvido-su-contrasea">Olvido su contraseña?</a>
+          <a href="/registro" class="registrarse">Registrarse</a>
+          <div class="rectangle-group">
+            <button class="group-inner" type="submit" [disabled]="!loginForm.valid">Login</button>
           </div>
         </div>
-        <div class="login1">Login</div>
-        <div class="enter-your-username-or-email-a-parent">
-          <div class="enter-your-username">Ingrese su ID o email</div>
-          <input class="instance-child" type="text" placeholder="ID or email"/>
+        <div class="group-parent">
+          <div class="lorem-ipsum-parent">
+            <h1 class="lorem-ipsum">LOREM IPSUM</h1>
+            <h3 class="lorem-ipsum1">Lorem Ipsum</h3>
+          </div>
+          <div class="lorem-ipsum-is">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s,
+          </div>
         </div>
-        <div class="enter-your-password-parent">
-          <div class="enter-your-username">Ingrese su contraseña</div>
-          <input class="instance-item" type="text" placeholder="Contraseña"/>
-        </div>
-        <a href="/registro" class="olvido-su-contrasea">Olvido su contraseña?</a>
-        <a href="/registro" class="registrarse">Registrarse</a>
-        <div class="rectangle-group">
-          <button class="group-inner" onclick="window.location.href='/registro'">Login</button>
-          <a href="/registro" class="login2">Login</a>
-        </div>
-      </div>
-      <div class="group-parent">
-        <div class="lorem-ipsum-parent">
-          <h1 class="lorem-ipsum">LOREM IPSUM</h1>
-          <h3 class="lorem-ipsum1">Lorem Ipsum</h3>
-        </div>
-        <div class="lorem-ipsum-is">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s,
-        </div>
-      </div>
+      </form>
+
       <img
         class="whatsapp-image-2022-07-04-at-1"
         alt=""
-        src="./public/whatsapp-image-20220704-at-1042-1@2x.png"
+        src="../../../assets/img/logo-clinic.png"
       />
 
       <img

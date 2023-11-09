@@ -117,6 +117,7 @@
   box-shadow: 0 4px 19px rgba(119, 147, 65, 0.3);
   width: 22.17rem;
   height: 3.05rem;
+  color: var(--color-white);
   font: 600 20px var(--font-poppins);
 }
 .login2 {
@@ -198,10 +199,9 @@
   position: absolute;
   top: 1.13rem;
   left: 3.75rem;
-  width: 15.25rem;
-  height: 12.06rem;
-  object-fit: cover;
-  mix-blend-mode: darken;
+  width: 12rem;
+  height: 12rem;
+  object-fit: scale-down;
 }
 .medical-shield-1-icon {
   position: absolute;
