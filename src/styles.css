@@ -7,20 +7,74 @@ body {
 :root {
   /* fonts */
   --font-poppins: Poppins;
+  --body-bold: "SF Pro Text";
+  --title3-bold: "SF Pro Display";
 
   /* font sizes */
   --font-size-smi: 0.81rem;
   --font-size-15xl: 2.13rem;
   --font-size-sm: 0.88rem;
   --font-size-base: 1rem;
+  --font-size-3xs: 10px;
+  --font-size-xs: 12px;
+  --font-size-13xl: 32px;
+  --title3-bold-size: 20px;
+  --body-bold-size: 17px;
+  --footnote-bold-size: 13px;
 
   /* Colors */
+
   --color-white: #fff;
   --color-black: #000;
   --color-steelblue: #1b6392;
   --color-gray-100: #808080;
+  --system-background-light-primary: #fff;
+  --color-darkslategray-100: #343434;
+  --label-color-light-tertiary: rgba(60, 60, 67, 0.3);
+  --color-lightgray: #d3d3d3;
+  --label-color-light-primary: #000;
+  --fill-color-light-tertiary: rgba(118, 118, 128, 0.12);
+  --color-whitesmoke: #efefef;
+  --default-systemred-light: #ff3b30;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-base: 16px;
+  --padding-7xs: 6px;
+  --padding-xs: 12px;
+  --padding-6xs: 7px;
 
   /* Border radiuses */
   --br-4xs: 9px;
+  --br-8xs: 5px;
+  --br-xl: 20px;
+  --br-mini: 15px;
+  --br-smi: 13px;
+  --br-5xs: 8px;
+  --br-81xl: 100px;
+
+  /* font sizes */
+  --font-size-3xs: 10px;
+  --font-size-xs: 12px;
+  --font-size-base: 16px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-steelblue: #1a6291;
+  --color-darkslategray-100: #393939;
+  --color-darkslategray-200: #343434;
+  --color-lightgray: #d3d3d3;
+  --color-black: #000;
+  --color-darkgray: #afafaf;
+  --color-gainsboro: #e1e1e1;
+
+  /* Border radiuses */
+  --br-8xs: 5px;
+  --br-xl: 20px;
+  --br-3xs: 10px;
 }
+
+
 
