@@ -8,9 +8,9 @@ import { NgForm } from '@angular/forms';
 })
 export class LoginComponent {
   onSubmit(form: NgForm) {
+    console.log(form.value);
     if (form.valid) {
       // Realizar la lógica de inicio de sesión aquí
-      console.log(form.value);
     }
   }
 }

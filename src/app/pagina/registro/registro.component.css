@@ -8,12 +8,17 @@
   height: 45.06rem;
 }
 
-.error {
+.error,
+.error-img {
   position:relative !important;
   top: 100%;
   left: 0;
   color: red;
   font-size: 12px;
+}
+
+.error-img{
+  top: 45%;
 }
 
 .group-item {

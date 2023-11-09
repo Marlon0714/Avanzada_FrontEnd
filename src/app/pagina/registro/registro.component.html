@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="utf-8" />
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/my-app/src/styles.css" />
   <link rel="stylesheet" href="./registro.component.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" />
+  <title>Registro</title>
 </head>
 
 <body>
@@ -18,10 +19,13 @@
         <div class="rectangle-group">
           <div class="group-item"></div>
           <div class="parent">
-            <img class="icon" alt="" src="../../../assets/img/icon-register.png" />
 
-            <input class="subir-foto" type="file" name="Subir Foto" accept="image/png, .jpeg, .jpg, image/gif" ngModel
-              #photo="ngModel" required>
+            <img class="icon" alt="" [src]="imagePreview ? imagePreview : '../../../assets/img/icon-register.png'" />
+            <input class="subir-foto" type="file" name="photo" accept="image/png, .jpeg, .jpg, image/gif" ngModel
+              #photo="ngModel" required (change)="onFileChange($event)">
+            <div *ngIf="photo.invalid && (photo.dirty || photo.touched || registerForm.submitted)" class="error-img">
+              <div *ngIf="photo.errors?.['required']">Imagen es requerida.</div>
+            </div>
 
             <div class="enter-your-username-or-email-a-parent">
               <div class="enter-your-username">Ingrese su cedula</div>
@@ -50,14 +54,17 @@
               <div class="enter-your-username">Ingrese su fecha de nacimiento</div>
               <input class="instance-child" type="date" name="fechaNacimiento" placeholder="Fecha de Nacimiento" ngModel
                 #fechaNacimiento="ngModel" required />
-              <div *ngIf="fechaNacimiento.invalid && (fechaNacimiento.dirty || fechaNacimiento.touched || registerForm.submitted)" class="error">
+              <div
+                *ngIf="fechaNacimiento.invalid && (fechaNacimiento.dirty || fechaNacimiento.touched || registerForm.submitted)"
+                class="error">
                 <div *ngIf="fechaNacimiento.errors?.['required']">Fecha de nacimiento es requerida.</div>
               </div>
             </div>
 
             <div class="group-div">
               <div class="enter-your-username">Ingrese su email</div>
-              <input class="instance-child" type="email" name="email" placeholder="Email" ngModel #email="ngModel" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+              <input class="instance-child" type="email" name="email" placeholder="Email" ngModel #email="ngModel"
+                required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
               <div *ngIf="email.invalid && (email.dirty || email.touched || registerForm.submitted)" class="error">
                 <div *ngIf="email.errors?.['required']; else notRequired">Email es requerido.</div>
                 <ng-template #notRequired>
@@ -70,7 +77,8 @@
               <div class="enter-your-username">Ingrese su contraseña</div>
               <input class="instance-child" type="password" name="contrasena" placeholder="Contraseña" ngModel
                 #contrasena="ngModel" required />
-              <div *ngIf="contrasena.invalid && (contrasena.dirty || contrasena.touched || registerForm.submitted)" class="error">
+              <div *ngIf="contrasena.invalid && (contrasena.dirty || contrasena.touched || registerForm.submitted)"
+                class="error">
                 <div *ngIf="contrasena.errors?.['required']">Contraseña es requerida.</div>
               </div>
             </div>
@@ -118,7 +126,8 @@
               <div class="rectangle-div"></div>
               <input class="instance-child" type="number" name="telefono" placeholder="Teléfono" ngModel
                 #telefono="ngModel" required min="1000000000" max="9999999999" />
-              <div *ngIf="telefono.invalid && (telefono.dirty || telefono.touched || registerForm.submitted)" class="error">
+              <div *ngIf="telefono.invalid && (telefono.dirty || telefono.touched || registerForm.submitted)"
+                class="error">
                 <div *ngIf="telefono.errors?.['required']; else notRequired">Número de teléfono es requerido.</div>
                 <ng-template #notRequired>
                   <div *ngIf="telefono.errors?.['min'] || telefono.errors?.['max']">Número de teléfono debe tener
@@ -130,7 +139,7 @@
 
           </div>
           <div class="rectangle-container">
-            <button class="group-inner" type="submit" [disabled]="!registerForm.valid">Registrarse</button>
+            <button class="group-inner" type="submit">Registrarse</button>
           </div>
         </div>
       </form>

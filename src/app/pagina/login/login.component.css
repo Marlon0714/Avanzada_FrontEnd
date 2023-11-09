@@ -6,6 +6,15 @@
   width: 37.56rem;
   height: 45.06rem;
 }
+
+.error {
+  position:relative !important;
+  top: 100%;
+  left: 0;
+  color: red;
+  font-size: 12px;
+}
+
 .group-item {
   position: absolute;
   top: 5.63rem;

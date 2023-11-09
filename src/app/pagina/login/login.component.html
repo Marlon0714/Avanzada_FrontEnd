@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<head>
 
-    <link rel="stylesheet" href="/my-app/src/styles.css" />
-    <link rel="stylesheet" href="./login.component.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-    />
-    <title>Inicio</title>
-  </head>
-  <body>
-    <div class="login">
-      <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
-        <div class="rectangle-parent">
-          <div class="group-child"></div>
-          <div class="group-item"></div>
-          <div class="bienvenido-a-nombre-parent">
-            <div class="bienvenido-a-nombre-container">
-              <span>Bienvenido a </span>
-              <span class="nombre">Nombre</span>
-            </div>
-          </div>
-          <div class="login1">Login</div>
-          <div class="enter-your-username-or-email-a-parent">
-            <div class="enter-your-username">Ingrese su ID o email</div>
-            <input class="instance-child" type="text" placeholder="ID or email" name="email" ngModel #email="ngModel" required/>
-          </div>
-          <div class="enter-your-password-parent">
-            <div class="enter-your-username">Ingrese su contraseña</div>
-            <input class="instance-item" type="password" placeholder="Contraseña" name="password" ngModel #password="ngModel" required/>
-          </div>
-          <a href="/crear-cita" class="olvido-su-contrasea">Olvido su contraseña?</a>
-          <a href="/registro" class="registrarse">Registrarse</a>
-          <div class="rectangle-group">
-            <button class="group-inner" type="submit" [disabled]="!loginForm.valid">Login</button>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="/my-app/src/styles.css" />
+  <link rel="stylesheet" href="./login.component.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+  <title>Inicio</title>
+</head>
+
+<body>
+  <div class="login">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+      <div class="rectangle-parent">
+        <div class="group-child"></div>
+        <div class="group-item"></div>
+        <div class="bienvenido-a-nombre-parent">
+          <div class="bienvenido-a-nombre-container">
+            <span>Bienvenido a </span>
+            <span class="nombre">Nombre</span>
           </div>
         </div>
-        <div class="group-parent">
-          <div class="lorem-ipsum-parent">
-            <h1 class="lorem-ipsum">LOREM IPSUM</h1>
-            <h3 class="lorem-ipsum1">Lorem Ipsum</h3>
-          </div>
-          <div class="lorem-ipsum-is">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever
-            since the 1500s, Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s,
+        <div class="login1">Login</div>
+        <div class="enter-your-username-or-email-a-parent">
+          <div class="enter-your-username">Ingrese su email</div>
+          <input class="instance-child" type="email" placeholder="Email" name="email" ngModel #email="ngModel" required
+            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+          <div *ngIf="email.invalid && (email.dirty || email.touched || loginForm.submitted)" class="error">
+            <div *ngIf="email.errors?.['required']; else notRequired">Email es requerido.</div>
+            <ng-template #notRequired>
+              <div *ngIf="email.errors?.['pattern']">Por favor, ingrese un email válido.</div>
+            </ng-template>
           </div>
         </div>
-      </form>
-
-      <img
-        class="whatsapp-image-2022-07-04-at-1"
-        alt=""
-        src="../../../assets/img/logo-clinic.png"
-      />
-
-      <img
-        class="medical-shield-1-icon"
-        alt=""
-        src="./public/56120medicalshield-1@2x.png"
-      />
+        <div class="enter-your-password-parent">
+          <div class="enter-your-username">Ingrese su contraseña</div>
+          <input class="instance-item" type="password" placeholder="Contraseña" name="contrasena" ngModel #contrasena="ngModel" required />
+          <div *ngIf="contrasena.invalid && (contrasena.dirty || contrasena.touched || loginForm.submitted)" class="error">
+            <div *ngIf="contrasena.errors?.['required']">Contraseña es requerida.</div>
+          </div>
+        </div>
+        <a href="/crear-cita" class="olvido-su-contrasea">Olvido su contraseña?</a>
+        <a href="/registro" class="registrarse">Registrarse</a>
+        <div class="rectangle-group">
+          <button class="group-inner" type="submit">Login</button>
+        </div>
+      </div>
+    </form>
+    <div class="group-parent">
+      <div class="lorem-ipsum-parent">
+        <h1 class="lorem-ipsum">LOREM IPSUM</h1>
+        <h3 class="lorem-ipsum1">Lorem Ipsum</h3>
+      </div>
+      <div class="lorem-ipsum-is">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s,
+      </div>
     </div>
-  </body>
-</html>
 
+    <img class="whatsapp-image-2022-07-04-at-1" alt="" src="../../../assets/img/logo-clinic.png" />
+
+    <img class="medical-shield-1-icon" alt="" src="./public/56120medicalshield-1@2x.png" />
+  </div>
+</body>
+
+</html>
