@@ -13,13 +13,9 @@
 </head>
 <body>
 <div class="crear-citas">
-  <img class="xmlid-8627-icon" alt="" src="./public/xmlid-8627.svg" />
-
-  <img class="xmlid-8627-icon" alt="" src="./public/xmlid-86271.svg" />
-
-  <img class="xmlid-8627-icon" alt="" src="./public/xmlid-86272.svg" />
 
   <div class="crear-citas-child"></div>
+  <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
   <button class="agendar">AGENDAR</button>
   <div class="vector-parent">
     <img class="group-child1" alt="" src="./public/rectangle-60.svg" />
@@ -29,8 +25,8 @@
     <select class="doctores" name="Doctor">
       <b class="doctor1">Doctor</b>
       <option value="Dr. Juan Perez">Dr. Juan Perez</option>
-      <option value="Dr. Juan Perez">Dr. Juan Perez</option>
-      <option value="Dr. Juan Perez">Dr. Juan Perez</option>
+      <option value="Dr. Juan Perez">Dr. A</option>
+      <option value="Dr. Juan Perez">Dr. B</option>
     </select>
     <input class="ingrese-la-hora" type="text" />
 
@@ -54,18 +50,22 @@
     <img
       class="profile-image-icon"
       alt=""
-      src="./public/profile-image@2x.png"
+      src="../../../assets/img/icon-register.png"
     />
-    <form  action="#">
+
     <label class="label_cita">Fecha de la cita:</label>
       <input
       class="seleccione-la-fecha"
       value="date"
       placeholder="Ingrese la fecha"
       type="date"
-
+      ngModel #fechaCita="ngModel" required
     />
-    </form>
+    <div
+      *ngIf="fechaCita.invalid && (fechaCita.dirty || fechaCita.touched || registerForm.submitted)"
+      class="alert">
+      <div *ngIf="fechaCita.errors?.['required']">La fecha de la cita es requerida.</div>
+    </div>
   </div>
   <div class="side-menu">
     <img class="side-menu-child" alt="" src="./public/rectangle-59.svg" />
@@ -76,7 +76,7 @@
     <b class="account">ACCOUNT</b>
     <button class="historial-medico">Historial Medico</button>
     <div class="perfil">Perfil</div>
-    <a href="/login "class="cerrar-sesion">Cerrar Sesión</a>
+    <a href="/medico-consulta "class="cerrar-sesion">Cerrar Sesión</a>
     <div class="top-cutter"></div>
 
     <div class="contactenos-91-999-container">
@@ -86,18 +86,14 @@
       <p class="p">+91 -999 999 9999</p>
     </div>
 
-    <img class="group-icon" alt="" src="./public/group.svg" />
 
-    <img class="group-icon1" alt="" src="./public/group1.svg" />
 
-    <img class="group-icon2" alt="" src="./public/group2.svg" />
-
-    <img class="group-icon3" alt="" src="./public/group3.svg" />
-
-    <img class="logo-1-icon" alt="" src="./public/logo-1@2x.png" />
+    <img class="logo-1-icon" alt="" src="../../../assets/img/img.png" />
 
 
   </div>
+
+</form>
 </div>
 </body>
 </html>

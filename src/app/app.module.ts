@@ -8,6 +8,7 @@ import { InicioComponent } from './pagina/inicio/inicio.component';
 import { LoginComponent } from './pagina/login/login.component';
 import { RegistroComponent } from './pagina/registro/registro.component';
 import { CrearCitaComponent } from './pagina/crear-cita/crear-cita.component';
+import { MedicoConsultaComponent } from './pagina/medico-consulta/medico-consulta.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CrearCitaComponent } from './pagina/crear-cita/crear-cita.component';
     InicioComponent,
     LoginComponent,
     RegistroComponent,
-    CrearCitaComponent
+    CrearCitaComponent,
+    MedicoConsultaComponent
   ],
   imports: [
     BrowserModule,

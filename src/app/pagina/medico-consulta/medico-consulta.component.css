@@ -1,0 +1,588 @@
+.consulta-child {
+    position: absolute;
+    top: 475px;
+    left: 278px;
+    border-radius: var(--br-3xs);
+    width: 1144px;
+    height: 466px;
+  }
+  .xmlid-8627-icon {
+    position: absolute;
+    height: 0.59%;
+    width: 0.42%;
+    top: 22.29%;
+    right: 95.14%;
+    bottom: 77.13%;
+    left: 4.44%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .consulta-item {
+    position: absolute;
+    top: 170px;
+    left: 278px;
+    border-radius: var(--br-3xs);
+    width: 1144px;
+    height: 356px;
+  }
+  .consulta-inner {
+    position: absolute;
+    top: 214px;
+    left: 369px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    width: 147px;
+    height: 147px;
+  }
+  .ben-parker-ohkelokq3re-unsplas-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 203.18px;
+    height: 304.01px;
+    object-fit: cover;
+  }
+  .mask-group {
+    position: absolute;
+    top: 219.13px;
+    left: 374.42px;
+    width: 136.15px;
+    height: 136.15px;
+  }
+  .john-doe,
+  .trust0331,
+  .yrs-male {
+    position: absolute;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+  }
+  .john-doe {
+    margin: 0;
+    top: 368px;
+    left: 368px;
+    font-size: 20px;
+    font-family: inherit;
+    width: 148px;
+    height: 23px;
+  }
+  .trust0331,
+  .yrs-male {
+    left: 354px;
+    width: 176px;
+  }
+  .yrs-male {
+    top: 391px;
+    font-size: 16px;
+    color: #868686;
+    height: 18px;
+  }
+  .trust0331 {
+    top: 426px;
+    font-size: 18px;
+    color: var(--color-darkslategray);
+    height: 23px;
+  }
+  .a,
+  .aaaaa,
+  .alergias,
+  .armenia,
+  .ciudad,
+  .eps,
+  .h3,
+  .telfono,
+  .tipo-de-sangre {
+    margin: 0;
+    position: absolute;
+    top: 230px;
+    left: 631px;
+    font-size: inherit;
+    font-weight: 600;
+    font-family: inherit;
+    display: inline-block;
+    width: 109px;
+    height: 33px;
+  }
+  .a,
+  .aaaaa,
+  .alergias,
+  .armenia,
+  .ciudad,
+  .eps,
+  .h3,
+  .telfono {
+    left: 850px;
+    font-weight: 400;
+    width: 40px;
+  }
+  .aaaaa,
+  .alergias,
+  .armenia,
+  .ciudad,
+  .eps,
+  .h3,
+  .telfono {
+    top: 268px;
+    left: 631px;
+    font-weight: 600;
+    width: 148px;
+  }
+  .aaaaa,
+  .alergias,
+  .armenia,
+  .ciudad,
+  .eps,
+  .h3 {
+    top: 306px;
+  }
+  .aaaaa,
+  .alergias,
+  .armenia,
+  .ciudad,
+  .h3 {
+    top: 344px;
+  }
+  .aaaaa,
+  .alergias,
+  .armenia,
+  .h3 {
+    top: 382px;
+  }
+  .aaaaa,
+  .armenia,
+  .h3 {
+    top: 268px;
+    left: 850px;
+    font-weight: 400;
+    width: 97px;
+  }
+  .aaaaa,
+  .armenia {
+    top: 306px;
+  }
+  .armenia {
+    top: 344px;
+  }
+  .consulta-child1,
+  .rectangle-div {
+    position: absolute;
+    top: 380px;
+    left: 850px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-gainsboro-100);
+    width: 69px;
+    height: 28px;
+  }
+  .consulta-child1 {
+    left: 934px;
+    width: 106px;
+  }
+  .alergia-1,
+  .alergia-2 {
+    position: absolute;
+    top: 385px;
+    left: 860px;
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-100);
+  }
+  .alergia-2 {
+    left: 947px;
+  }
+  .line-div {
+    position: absolute;
+    top: 212.5px;
+    left: 564.5px;
+    border-right: 1px solid #e3e3e3;
+    box-sizing: border-box;
+    width: 1px;
+    height: 241px;
+  }
+  .medicamentos,
+  .paciente {
+    position: absolute;
+    display: inline-block;
+  }
+  .paciente {
+    top: 153px;
+    left: 328px;
+    font-size: 24px;
+    width: 151px;
+    height: 32px;
+  }
+  .medicamentos {
+    margin: 0;
+    top: 767px;
+    left: 354px;
+    border: none;
+    font-size: inherit;
+    font-weight: 600;
+    font-family: inherit;
+    width: 148px;
+  }
+
+  .finalizar {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #007bff; /* Puedes cambiar este color a tu preferencia */
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    top:52rem;
+    left: 60rem;
+    z-index: 2;
+  }
+  
+  .finalizar:hover {
+    background-color: #0056b3; /* Cambia este color al hacer hover */
+    border-color: #0056b3; /* Cambia este color al hacer hover */
+  }
+  
+
+  .consulta-child2 {
+    position: absolute;
+    top: 795px;
+    left: 354px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-gainsboro-100);
+    width: 106px;
+    height: 28px;
+  }
+  .medicamento-1 {
+    position: absolute;
+    top: 801px;
+    left: 355px;
+    border: none;
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-100);
+  }
+  .consulta-child3 {
+    position: absolute;
+    top: 795px;
+    left: 479px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-gainsboro-100);
+    width: 106px;
+    height: 28px;
+  }
+  .medicamento-2 {
+    position: absolute;
+    border: none;
+    top: 801px;
+    left: 600px;
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-100);
+  }
+  .imagenPaciente{
+    position: absolute;
+    top: 214px;
+    left: 369px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    width: 147px;
+    height: 147px;
+  }
+  .lorem-ipsum-dolor,
+  .notas-del-mdico {
+    position: absolute;
+    left: 339px;
+    font-weight: 500;
+    
+    border: #868686;
+    border:20px;
+  }
+  .lorem-ipsum-dolor {
+    border: 0;
+    background-color: transparent;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-sm);
+    top: 646px;
+    color: var(--color-darkslategray);
+    text-align: left;
+    width: 800px;
+    height: 93px;
+  }
+  .notas-del-mdico {
+    top: 613px;
+    font-size: var(--font-size-xs);
+    color: var(--color-silver-100);
+    height: 18px;
+    border: #868686;
+    border:20;
+  }
+  .diagnosticoPaciente {
+    border: none !important;
+    background-color: transparent;
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-sm);
+    top: 557px;
+    left: 339px;
+    color: var(--color-darkslategray);
+    text-align: left;
+    width: 800px;
+    height: 40px;
+  }
+  .diagnostico,
+  .volver,
+  .diagnosticoPaciente {
+    border: none !important;
+    position: absolute;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .diagnostico {
+    margin: 0;
+    border: none !important;
+    top: 524px;
+    left: 339px;
+    font-size: var(--font-size-xs);
+    font-family: inherit;
+    color: var(--color-silver-100);
+    width: 124px;
+    height: 18px;
+  }
+  .volver {
+    top: 159px;
+    left: 1248px;
+    color: #df3e32;
+    width: 102px;
+    height: 23px;
+  }
+  .side-menu-child {
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    border-radius: var(--br-xl);
+    width: 324px;
+    height: 968px;
+  }
+  .side-menu-item {
+    position: absolute;
+    top: 297px;
+    left: 1px;
+    background-color: #e0f3ff;
+    width: 270.74px;
+    height: 49.72px;
+  }
+  .account {
+    position: absolute;
+    top: 551px;
+    left: 35px;
+  }
+  .cerrar-sesin,
+  .perfil {
+    position: absolute;
+    top: 620px;
+    left: 73.11px;
+  }
+  .cerrar-sesin {
+    top: 677px;
+    color: var(--color-steelblue);
+  }
+  .bottom-cutter,
+  .top-cutter {
+    position: absolute;
+    top: 198.28px;
+    left: -0.11px;
+    border-top: 1px solid var(--color-lightgray);
+    box-sizing: border-box;
+    width: 271.74px;
+    height: 1px;
+  }
+  .bottom-cutter {
+    top: 1008.38px;
+  }
+  .contactenos1 {
+    font-weight: 700;
+  }
+  .contactenos,
+  .p {
+    margin: 0;
+  }
+  .p {
+    font-size: var(--font-size-3xs);
+    color: var(--color-darkslategray);
+  }
+  .contactenos-91-999-container {
+    position: absolute;
+    top: 60rem;
+    left: 70.26px;
+    color: var(--color-steelblue);
+  }
+  .side-menu-inner {
+    position: absolute;
+    top: 1036.69px;
+    left: 31.95px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-steelblue);
+    width: 27.64px;
+    height: 32.32px;
+  }
+  .group-icon,
+  .group-icon1,
+  .group-icon2 {
+    position: absolute;
+    height: 1.44%;
+    width: 5.78%;
+    top: 97.74%;
+    right: 79.76%;
+    bottom: 0.82%;
+    left: 14.46%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-icon1,
+  .group-icon2 {
+    height: 1.5%;
+    width: 6.01%;
+    top: 57.9%;
+    right: 80.69%;
+    bottom: 40.6%;
+    left: 13.3%;
+  }
+  .group-icon2 {
+    height: 1.31%;
+    width: 6.39%;
+    top: 63.52%;
+    right: 80.31%;
+    bottom: 35.17%;
+  }
+  .logo-1-icon {
+    position: absolute;
+    top: 128px;
+    left: 26px;
+    width: 134px;
+    height: 52px;
+    object-fit: cover;
+  }
+  .icon-home {
+    position: absolute;
+    height: 1.78%;
+    width: 6.99%;
+    top: 28.81%;
+    right: 79.76%;
+    bottom: 69.41%;
+    left: 13.25%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .whatsapp-image-2022-07-04-at-1 {
+    position: absolute;
+    top: 80px;
+    left: 11px;
+    width: 166px;
+    height: 87px;
+    object-fit: cover;
+  }
+  .group-icon3,
+  .inicio {
+    position: absolute;
+    top: 308px;
+    left: 72px;
+  }
+  .group-icon3 {
+    height: 1.28%;
+    width: 6.99%;
+    top: 34.61%;
+    right: 79.02%;
+    bottom: 64.11%;
+    left: 13.98%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .agenda,
+  .side-menu {
+    position: absolute;
+    top: 370px;
+    left: 73px;
+  }
+  .side-menu {
+    top: -96px;
+    left: 18px;
+    width: 271.74px;
+    height: 1069.01px;
+    font-size: var(--font-size-xs);
+  }
+  .group-child {
+    position: absolute;
+    top: -19.67px;
+    left: -35px;
+    border-radius: var(--br-xl);
+    width: 1175.22px;
+    height: 145.78px;
+  }
+  .consulta1,
+  .group-item {
+    position: absolute;
+    top: 19.33px;
+    left: 31.49px;
+  }
+  .group-item {
+    top: 28.67px;
+    left: 55rem;
+    border-right: 1px solid #c5c5c5;
+    box-sizing: border-box;
+    width: 1px;
+    height: 26.77px;
+  }
+  .nombre {
+    position: absolute;
+    top: 24.93px;
+    left: 58.3rem;
+    font-size: var(--font-size-xs);
+    color: var(--color-darkslategray);
+  }
+  .medico {
+    position: relative;
+  }
+  .medico-wrapper {
+    position: absolute;
+    top: 32.93px;
+    left: 58.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: var(--font-size-3xs);
+    color: var(--color-steelblue);
+  }
+  .profile-image-icon {
+    position: absolute;
+    top: 20.43px;
+    left: 55.5rem;
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+  }
+  .vector-parent {
+    position: absolute;
+    top: 1rem;
+    left: 20rem;
+    width: 1rem;
+    height: 2rem;
+    font-size: 32px;
+  }
+  .contenedor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .consulta {
+    position: relative;
+    background-color: #fff;
+    width: 83rem;
+    height: 57rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--color-black);
+    font-family: var(--font-poppins);
+  }
+  
